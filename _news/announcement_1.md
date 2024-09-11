@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated as a USC bachelor in Computer Science!
+Graduated from USC with honor!😄
