@@ -14,6 +14,7 @@ profile:
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
+latest_post: false
 ---
 
 <!-- I am a first-year Ph.D. student in Computer Science at UC Davis. I love [LUKA](https://luka-group.github.io/). And I love my advisor [Muhao Chen](https://muhaochen.github.io/)
