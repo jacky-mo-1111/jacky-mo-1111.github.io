@@ -11,7 +11,7 @@ profile:
   more_info: >
 
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 latest_post: false
@@ -21,7 +21,7 @@ latest_post: false
 
 My research focus is NLP. more specifically, AI safety. Build robust safe LLM or LLM4Code. Backdoor attack, defense, detection, jailbreak attack and defense.  -->
 
-I am a first-year Ph.D. student in Computer Science at the University of California, Davis, where I am fortunate to be advised by Prof. [Muhao Chen](https://muhaochen.github.io/) in [LUKA](https://luka-group.github.io/) lab.
+I am a first-year Ph.D. student in Computer Science at the University of California, Davis, where I am fortunate to be advised by Prof. [Muhao Chen](https://muhaochen.github.io/) and Prof. [Zhe Zhao](https://sites.google.com/view/zhezhao).
 
 My research primarily focuses on AI safety, particularly in building secure and reliable LLMs and LLM4Code. I explore various aspects of ensuring the safety and robustness of these models, including defending against and detecting backdoor attacks. In addition, my work extends to understanding and mitigating jailbreak attacks, where models are manipulated to generate harmful or unintended outputs.
 
