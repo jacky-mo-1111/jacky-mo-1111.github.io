@@ -23,7 +23,7 @@ My research focus is NLP. more specifically, AI safety. Build robust safe LLM or
 
 I am a first-year Ph.D. student in Computer Science at the University of California, Davis, where I am fortunate to be advised by Prof. [Muhao Chen](https://muhaochen.github.io/) and Prof. [Zhe Zhao](https://sites.google.com/view/zhezhao).
 
-My research primarily focuses on AI safety, particularly in building secure and reliable LLMs and LLM4Code. I explore various aspects of ensuring the safety and robustness of these models, including defending against and detecting backdoor attacks. In addition, my work extends to understanding and mitigating jailbreak attacks, where models are manipulated to generate harmful or unintended outputs.
+My research primarily focuses on AI safety, particularly in building secure and reliable LLMs and LLM4Code. I explore various aspects of safety and robustness of these models, including defending against and detecting backdoor attacks. In addition, my work extends to understanding and mitigating jailbreak attacks, where models are manipulated to generate harmful or unintended outputs.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
