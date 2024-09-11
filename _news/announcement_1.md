@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated from USC with honor!😄
+Graduated from USC with honor! 😄
