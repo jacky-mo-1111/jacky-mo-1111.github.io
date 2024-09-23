@@ -31,3 +31,13 @@ Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxide
 > —Anais Nin
 
 Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual. -->
+
+---
+layout: post
+date: 2024-9-23 15:59:00-0400
+inline: true
+related_posts: false
+---
+
+Our team CapitalAI just got selected by [Amazon Trust AI Challenge](https://www.amazon.science/trusted-ai-challenge) as a Red-Team competitor!
+
