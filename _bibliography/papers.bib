@@ -34,6 +34,17 @@
   abstract ="Backdoor attacks, in which a model behaves maliciously when given an attacker-specified trigger, pose a major security risk for practitioners who depend on publicly released language models. Backdoor detection methods aim to detect whether a released model contains a backdoor, so that practitioners can avoid such vulnerabilities. While existing backdoor detection methods have high accuracy in detecting backdoored models on standard benchmarks, it is unclear whether they can robustly identify backdoors in the wild. In this paper, we examine the robustness of backdoor detectors by manipulating different factors during backdoor planting. We find that the success of existing methods highly depends on how intensely the model is trained on poisoned data during backdoor planting. Specifically, backdoors planted with either more aggressive or more conservative training are significantly more difficult to detect than the default ones. Our results highlight a lack of robustness of existing backdoor detectors and the limitations in current benchmark construction.",
 }
 
+@article{wen2025thinkguard,
+  title={ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails},
+  author={Wen, Xiaofei and Zhou, Wenxuan and Mo, Wenjie Jacky and Chen, Muhao},
+  journal={arXiv preprint arXiv:2502.13458},
+  year={2025},
+  abbr={In submission to ACL}
+  pdf={https://arxiv.org/pdf/2502.13458},
+  preview={thinkguard.png},
+  abstract = "Ensuring the safety of large language models (LLMs) is critical as they are deployed in real-world applications. Existing guardrails rely on rule-based filtering or single-pass classification, limiting their ability to handle nuanced safety violations. To address this, we propose ThinkGuard, a critique-augmented guardrail model that distills knowledge from high-capacity LLMs by generating structured critiques alongside safety labels. Fine-tuned on critique-augmented data, the captured deliberative thinking ability drastically enhances the guardrail’s cautiousness and interpretability. Evaluated on multiple safety benchmarks, ThinkGuard achieves the highest average F1 and AUPRC, outperforming all baselines. Compared to LLaMA Guard 3, ThinkGuard improves accuracy by 16.1% and macro F1 by 27.0%. Moreover, it surpasses label-only fine-tuned models, confirming that structured critiques enhance both classification precision and nuanced safety reasoning while maintaining computational efficiency.",
+}
+
 @inproceedings{wang-etal-2023-causal,
     title = "A Causal View of Entity Bias in (Large) Language Models",
     author = "Wang, Fei  and
