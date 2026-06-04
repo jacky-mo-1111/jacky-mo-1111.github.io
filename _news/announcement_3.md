@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-06-25 07:59:00-0400
+date: 2026-05-29 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-Excited to share that our new paper, [RedCoder: Automated Multi‑Turn Red Teaming for Code LLMs](https://www.arxiv.org/abs/2507.22063) is now available on arXiv! It introduces RedCoder, an autonomous agent that systematically generates multi-turn adversarial interactions to expose vulnerabilities in code-generating LLMs. 
+Our new paper [Triaging Threats to Specialized Guardrails](https://arxiv.org/abs/2605.30693) is now available on arXiv. In this work, we introduce GuardZoo, a unified human-annotated benchmark for safety guardrails, and RouteGuard, a router-expert framework for threat-specific LLM safety detection.

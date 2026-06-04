@@ -1,11 +1,8 @@
 ---
 layout: post
-date: 2024-9-23 15:59:00-0400
+date: 2026-03-18 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-Thrilled to share that our team, CapitalAI, has been selected as a Red-Team competitor in the [Amazon Trust AI Challenge](https://www.amazon.science/trusted-ai-challenge)! Honored to serve as the Co-lead of our team as we tackle this exciting opportunity.
-
-
-
+Our paper [DebugLM: Learning Traceable Training Data Provenance for LLMs](https://arxiv.org/abs/2603.17884) is now available on arXiv. DebugLM enables LLMs to trace model behaviors back to their responsible training data sources and supports targeted test-time remediation without retraining.
