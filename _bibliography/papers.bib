@@ -34,6 +34,54 @@
   abstract="Despite rapid progress in video-capable MLLMs, we find that their apparent audio understanding in videos is often vision-driven: models rely on visual cues to infer or hallucinate acoustic information, rather than verifying the audio stream. This issue appears across both state-of-the-art open-source omni models and leading closed-source models from providers such as Google and OpenAI. We characterize this failure mode as an audio-visual Clever Hans effect, in which models appear (falsely) audio-grounded, but actually exploit visual-acoustic correlations without verifying whether the audio and visual streams are truly aligned. To systematically study this behavior, we introduce Thud, an intervention-driven probing framework based on three counterfactual audio edits: Shift, which tests temporal synchronization; Mute, which tests sound existence; and Swap, which tests audio-visual consistency. Beyond diagnosis, we further study a two-stage alignment recipe: intervention-derived preference pairs teach audio verification, while event-level general video preferences regularize the model against over-specialization. Our best 10K-sample recipe improves average performance across the three intervention dimensions by 28 percentage points, while slightly improving performance on general video and audio-visual QA benchmarks.",
 }
 
+@article{cai2026modellens,
+  title={ModelLens: Finding the Best for Your Task from Myriads of Models},
+  author={Cai, Rui and Mo, Wenjie Jacky and Wen, Xiaofei and Ma, Qiyao and Zhu, Wenhui and Chen, Xiwen and Chen, Muhao and Zhao, Zhe},
+  journal={arXiv preprint arXiv:2605.07075},
+  year={2026},
+  selected={true},
+  abbr={In submission to NeurIPS},
+  pdf={https://arxiv.org/pdf/2605.07075},
+  preview={model_lens.png},
+  abstract="The open-source model ecosystem now contains hundreds of thousands of pretrained models, yet picking the best model for a new dataset is increasingly infeasible: new models and unbenchmarked datasets emerge continuously, leaving practitioners with no prior records on either side. Existing approaches handle only fragments of this in-the-wild setting: AutoML and transferability estimation select models from small predefined pools or require expensive per-model forward passes on the target dataset, while model routing presupposes a given candidate pool. We introduce ModelLens, a unified framework for model recommendation in the wild. Our key insight is that public leaderboard interactions, though scattered and noisy, collectively trace out an implicit atlas of model capabilities across heterogeneous evaluation settings, a signal rich enough to learn from directly. By learning a performance-aware latent space over model--dataset--metric tuples, ModelLens ranks unseen models on unseen datasets without running candidates on the target dataset. On a new benchmark of 1.62M evaluation records spanning 47K models and 9.6K datasets, ModelLens surpasses baselines that either rely on metadata alone or require running each candidate on the target dataset. Its recommended Top-K pools further improve multiple representative routing methods by up to 81% across diverse QA benchmarks. Case studies on recently released benchmarks further confirm generalization to both text and vision-language tasks.",
+}
+
+@article{mo2026debuglm,
+  title={DebugLM: Learning Traceable Training Data Provenance for LLMs},
+  author={Mo, Wenjie Jacky and Liu, Qin and Wen, Xiaofei and Zhou, Wenxuan and Zhao, Zhe and Chen, Muhao},
+  journal={arXiv preprint arXiv:2603.17884},
+  year={2026},
+  selected={true},
+  abbr={In submission to EMNLP},
+  pdf={https://arxiv.org/pdf/2603.17884},
+  preview={debuglm.png},
+  abstract="Large language models (LLMs) are trained through multi-stage pipelines over heterogeneous data sources, yet developers lack a principled way to pinpoint the specific data responsible for an observed behavior. This lack of observability reduces debugging to reactive patching and makes failures prone to recur under distribution shift or subsequent model updates. To address this limitation, we propose DebugLM, a framework that equips LLMs with built-in data provenance, enabling them to explicitly trace the origins of their behaviors to specific training data sources. Specifically, the model learns to associate its responses with unique provenance tags that indicate the responsible dataset, empowering developers to precisely identify where undesirable behaviors are learned. Building on this capability, DebugLM further supports targeted test-time remediation, enabling developers to selectively trigger targeted refusal for specified data sources without retraining or modifying model parameters. Experiments demonstrate that DebugLM provides accurate behavior tracing in multi-stage training pipelines and effective test-time remediation while preserving the general utility of the model.",
+}
+
+@article{zhu2025omniguard,
+  title={OmniGuard: Unified Omni-Modal Guardrails with Deliberate Reasoning},
+  author={Zhu, Boyu and Wen, Xiaofei and Mo, Wenjie Jacky and Zhu, Tinghui and Xie, Yanan and Qi, Peng and Chen, Muhao},
+  journal={arXiv preprint arXiv:2512.02306},
+  year={2025},
+  selected={true},
+  abbr={In submission to COLM},
+  pdf={https://arxiv.org/pdf/2512.02306},
+  preview={omniguard.png},
+  abstract="Omni-modal Large Language Models (OLLMs) that process text, images, videos, and audio introduce new challenges for safety and value guardrails in human-AI interaction. Prior guardrail research largely targets unimodal settings and typically frames safeguarding as binary classification, which limits robustness across diverse modalities and tasks. To address this gap, we propose OmniGuard, the first family of omni-modal guardrails that performs safeguarding across all modalities with deliberate reasoning ability. To support the training of OmniGuard, we curate a large, comprehensive omni-modal safety dataset comprising over 210K diverse samples, with inputs that cover all modalities through both unimodal and cross-modal samples. Each sample is annotated with structured safety labels and carefully curated safety critiques from expert models through targeted distillation. Extensive experiments on 15 benchmarks show that OmniGuard achieves strong effectiveness and generalization across a wide range of multimodal safety scenarios. Importantly, OmniGuard provides a unified framework that enforces policies and mitigates risks in omni-modalities, paving the way toward building more robust and capable omnimodal safeguarding systems.",
+}
+
+@article{wen2025policyguard,
+  title={Learning Efficient Guardrails for Compliance},
+  author={Wen, Xiaofei and Mo, Wenjie Jacky and Xie, Yanan and Qi, Peng and Chen, Muhao},
+  journal={ICML 2026},
+  year={2026},
+  selected={true},
+  abbr={ICML},
+  pdf={https://arxiv.org/pdf/2510.03485},
+  preview={policyguard.png},
+  abstract="Autonomous web agents are increasingly deployed for long-horizon tasks, yet their ability to adhere to real-world policies remains critically underexplored compared to standard safety objectives. To address this gap, we introduce PolicyGuardBench, a benchmark of 60k policy-trajectory pairs designed to evaluate compliance through both full-trajectory and novel prefix-based violation detection tasks. Using this dataset, we train PolicyGuard, a lightweight guardrail model that achieves strong detection accuracy while maintaining high inference efficiency. Notably, our model demonstrates robust generalization capabilities, preserving high performance even on unseen domains. These contributions establish a comprehensive framework for studying policy compliance, showing that accurate and generalizable guardrails are feasible at small scales.",
+}
+
 
 
 
@@ -63,9 +111,9 @@
 @article{yan2024rethinking,
   title={Rethinking Backdoor Detection Evaluation for Language Models},
   author={Yan, Jun and Mo, Wenjie Jacky and Ren, Xiang and Jia, Robin},
-  journal={AdvML-Frontiers 2024},
-  year={2024},
-  abbr={AdvML-Frontiers},
+  journal={EMNLP},
+  year={2025},
+  abbr={EMNLP},
   pdf={https://arxiv.org/pdf/2409.00399},
   preview={backdoor_detect.png},
   abstract ="Backdoor attacks, in which a model behaves maliciously when given an attacker-specified trigger, pose a major security risk for practitioners who depend on publicly released language models. Backdoor detection methods aim to detect whether a released model contains a backdoor, so that practitioners can avoid such vulnerabilities. While existing backdoor detection methods have high accuracy in detecting backdoored models on standard benchmarks, it is unclear whether they can robustly identify backdoors in the wild. In this paper, we examine the robustness of backdoor detectors by manipulating different factors during backdoor planting. We find that the success of existing methods highly depends on how intensely the model is trained on poisoned data during backdoor planting. Specifically, backdoors planted with either more aggressive or more conservative training are significantly more difficult to detect than the default ones. Our results highlight a lack of robustness of existing backdoor detectors and the limitations in current benchmark construction.",
@@ -74,9 +122,9 @@
 @article{wen2025thinkguard,
   title={ThinkGuard: Deliberative Slow Thinking Leads to Cautious Guardrails},
   author={Wen, Xiaofei and Zhou, Wenxuan and Mo, Wenjie Jacky and Chen, Muhao},
-  journal={arXiv preprint arXiv:2502.13458},
+  journal={ACL},
   year={2025},
-  abbr={In submission to ACL},
+  abbr={ACL 2025},
   pdf={https://arxiv.org/pdf/2502.13458},
   preview={thinkguard.png},
   abstract = "Ensuring the safety of large language models (LLMs) is critical as they are deployed in real-world applications. Existing guardrails rely on rule-based filtering or single-pass classification, limiting their ability to handle nuanced safety violations. To address this, we propose ThinkGuard, a critique-augmented guardrail model that distills knowledge from high-capacity LLMs by generating structured critiques alongside safety labels. Fine-tuned on critique-augmented data, the captured deliberative thinking ability drastically enhances the guardrail’s cautiousness and interpretability. Evaluated on multiple safety benchmarks, ThinkGuard achieves the highest average F1 and AUPRC, outperforming all baselines. Compared to LLaMA Guard 3, ThinkGuard improves accuracy by 16.1% and macro F1 by 27.0%. Moreover, it surpasses label-only fine-tuned models, confirming that structured critiques enhance both classification precision and nuanced safety reasoning while maintaining computational efficiency.",
